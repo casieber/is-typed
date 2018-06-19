@@ -6,6 +6,13 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "bin": {
+    "has-types": "bin/cli.js"
+  },
   "author": "Colby Sieber",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "es6-promise": "^4.2.4",
+    "isomorphic-fetch": "^2.2.1"
+  }
 }
