@@ -1,13 +1,17 @@
 #!/usr/bin/env node
 const { hasTypes, result } = require('../src/index');
 
-const [,, ...args] = process.argv;
+const [,, ...packages] = process.argv;
 
-const package = args[0];
+if (packages.length === 0) {
+	console.log('Please provide at least one package name.');
+}
 
-console.log(`Checking ${package}...`);
+async function checkPackage(package) {
+	console.log(`Checking ${package}...`);
 
-hasTypes(package).then(value => {
+	const value = await hasTypes(package);
+
 	switch(value) {
 		case result.notFound:
 			console.log(`No typings found. :(`);
@@ -21,4 +25,5 @@ hasTypes(package).then(value => {
 		default:
 			throw new Error(`Unknown result: ${value}`);
 	}
-});
+}
+
