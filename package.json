@@ -1,5 +1,5 @@
 {
-  "name": "has-types",
+  "name": "is-typed",
   "version": "1.0.0",
   "description": "Check for the existence of TypeScript typings definitions for a given npm package.",
   "main": "src/index.js",
