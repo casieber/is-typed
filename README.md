@@ -14,7 +14,7 @@ npm install -g has-types
 
 Using the tool is as simple as providing a list of packages to the cli.
 ```bash
-has-types <packages...>
+has-types <package>...
 ```
 
 For instance:
