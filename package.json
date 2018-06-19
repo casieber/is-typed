@@ -1,0 +1,11 @@
+{
+  "name": "has-types",
+  "version": "1.0.0",
+  "description": "Check for the existence of TypeScript typings definitions for a given npm package.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Colby Sieber",
+  "license": "MIT"
+}
