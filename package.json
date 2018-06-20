@@ -1,7 +1,7 @@
 {
   "name": "is-typed",
   "version": "1.0.0",
-  "description": "Check for the existence of TypeScript typings definitions for a given npm package.",
+  "description": "Check for the existence of TypeScript typings definitions for npm packages.",
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
